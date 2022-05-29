@@ -1,0 +1,10 @@
+#!/bin/bash
+
+TOOL_NAME="$(basename "$0" | awk -F'_' '{print $3}')"
+VERSION="$(awk -F '>' '/<Version>/ {print substr($2,1,match($2,"<")-1)}' manifest.xml)"
+PACKAGE_NAME="tools.cupcake.$TOOL_NAME-v$VERSION.xrnx"
+
+echo "Packing Renoise .xrnx '$PACKAGE_NAME'"
+zip -X "$PACKAGE_NAME" ./*.lua ./*.xml ./*/*.lua
+echo "Moving XRNX package to ~/Documents"
+mv -v "$PACKAGE_NAME" ~/Documents/
