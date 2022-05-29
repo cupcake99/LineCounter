@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <ApiVersion>6</ApiVersion>
+  <AutoUpgraded>true</AutoUpgraded>
+  <Id>tools.cupcake.LineCounter</Id>
+  <Version>1.400</Version>
+  <Author>cupcake99</Author>
+  <Name>Line Counter</Name>
+  <Category>Utility</Category>
+  <Description>Counts the number of pattern lines in current selection and displays the result in the status bar. Edit Step can be linked to the selection in the pattern to allow quick setting of odd values. Only works for main pattern editor, not in phrases (yet).</Description>
+</RenoiseScriptingTool>
